@@ -21,13 +21,12 @@ import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi"; // Assuming so
 
 // --- Image Imports (Placeholders based on the data structure) ---
 // Note: You will need to create these files in your assets/images directory
-import PROJECT_IMG_1 from "../assets/images/project-1.png";
-import PROJECT_IMG_2 from "../assets/images/project-2.png";
-import PROJECT_IMG_3 from "../assets/images/project-3.png";
-import PROJECT_IMG_4 from "../assets/images/project-4.png";
-import PROJECT_IMG_5 from "../assets/images/project-5.png";
-import PROJECT_IMG_6 from "../assets/images/project-6.png";
-import PROJECT_IMG_7 from "../assets/images/project-7.png";
+import PROJECT_IMG_1 from "../assets/images/project-1.jpg";
+import PROJECT_IMG_2 from "../assets/images/project-2.jpg";
+import PROJECT_IMG_3 from "../assets/images/project-3.jpg";
+import PROJECT_IMG_4 from "../assets/images/project-4.jpg";
+import PROJECT_IMG_5 from "../assets/images/project-5.jpg";
+import PROJECT_IMG_6 from "../assets/images/project-6.jpg";
 
 // ====================================================================
 // --- SKILLS_CATEGORY ---
