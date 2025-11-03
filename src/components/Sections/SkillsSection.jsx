@@ -164,7 +164,10 @@ const SkillsSection = () => {
             <h3 className="text-xl font-medium mb-4">Also Working With</h3>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-3">
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-wrap justify-center gap-3"
+          >
             {TECH_STACK.map((tech, index) => (
               <motion.span
                 key={tech}
@@ -179,6 +182,33 @@ const SkillsSection = () => {
               </motion.span>
             ))}
           </motion.div>
+        </motion.div>
+
+        {/* Stats */}
+        <motion.div
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={containerVariants}
+          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8"
+        >
+          {STATS.map((stat, index) => (
+            <motion.div
+              key={stat.label}
+              variants={itemVariants}
+              className="text-center"
+            >
+              <div className="text-2xl md:text-3xl font-light text-blue-500 mb-2">
+                {stat.number}
+              </div>
+              <div
+                className={`text-sm ${
+                  isDarkMode ? "text-gray-400" : "text-gray-600"
+                }`}
+              >
+                {stat.label}
+              </div>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>
