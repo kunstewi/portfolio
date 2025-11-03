@@ -3,6 +3,7 @@ import { ArrowDown, Mail } from "lucide-react";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { useTheme } from "../../context/ThemeContext";
 import PROFILE_PIC from "../../assets/images/PROFILE_PIC.jpg";
+import { containerVariants, itemVariants } from "../../utils/helper";
 
 const HeroSection = () => {
   const { isDarkMode } = useTheme();
@@ -15,29 +16,6 @@ const HeroSection = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  };
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
-      },
-    },
-  };
-
-  const ItemVariants = {
-    hidden: { y: 30, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
-    },
   };
 
   const textVariants = {
@@ -157,7 +135,7 @@ const HeroSection = () => {
                 Full Stack Developer
               </motion.div>
               <motion.h1
-                variants={ItemVariants}
+                variants={itemVariants}
                 className="text-3xl md:text-5xl font-light mb-6 leading-tight"
               >
                 <span
@@ -175,7 +153,7 @@ const HeroSection = () => {
               </motion.h1>
 
               <motion.p
-                variants={ItemVariants}
+                variants={itemVariants}
                 className={`text-base md:text-lg ${
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 } mb-8 max-w-xl mx-auto font-light leading-relaxed`}
@@ -186,7 +164,7 @@ const HeroSection = () => {
 
               {/* CTA Buttons – Mobile */}
               <motion.div
-                variants={ItemVariants}
+                variants={itemVariants}
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
               >
                 <motion.button
@@ -213,7 +191,7 @@ const HeroSection = () => {
 
               {/* Social Links – Mobile */}
               <motion.div
-                variants={ItemVariants}
+                variants={itemVariants}
                 className="flex justify-center space-x-6 mb-8"
               >
                 {[
@@ -237,7 +215,7 @@ const HeroSection = () => {
               </motion.div>
               {/* Tech Stack – Mobile */}
               <motion.div
-                variants={ItemVariants}
+                variants={itemVariants}
                 className="flex justify-center items-center space-x-6 text-xs uppercase tracking-widest flex-wrap"
               >
                 <span
@@ -296,7 +274,10 @@ const HeroSection = () => {
               >
                 Full Stack Developer
               </motion.div>
-              <motion.h1 variants={ItemVariants} className="text-5xl xl:text-7xl font-light mb-8 leading-tight">
+              <motion.h1
+                variants={itemVariants}
+                className="text-5xl xl:text-7xl font-light mb-8 leading-tight"
+              >
                 <span
                   className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                 >
@@ -311,7 +292,7 @@ const HeroSection = () => {
               </motion.h1>
 
               <motion.p
-                variants={ItemVariants}
+                variants={itemVariants}
                 className={`text-xl ${
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 } mb-12 font-light leading-relaxed max-w-lg`}
@@ -321,7 +302,7 @@ const HeroSection = () => {
               </motion.p>
 
               {/* CTA Buttons – Desktop */}
-              <motion.div variants={ItemVariants} className="flex gap-6 mb-8">
+              <motion.div variants={itemVariants} className="flex gap-6 mb-8">
                 <motion.button
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.98 }}
@@ -345,7 +326,10 @@ const HeroSection = () => {
               </motion.div>
 
               {/* Social Links – Desktop */}
-              <motion.div variants={ItemVariants} className="flex space-x-6 mb-12">
+              <motion.div
+                variants={itemVariants}
+                className="flex space-x-6 mb-12"
+              >
                 {[
                   { icon: FiGithub, href: "#" },
                   { icon: FiLinkedin, href: "#" },
@@ -365,6 +349,91 @@ const HeroSection = () => {
                   </motion.a>
                 ))}
               </motion.div>
+            </motion.div>
+
+            {/* Right Column - Profile Image */}
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={imageVariants}
+              className="flex justify-center lg:justify-end"
+            >
+              <div className="relative">
+                {/* Tech Stack – Desktop */}
+                <motion.div
+                  variants={itemVariants}
+                  className="flex items-center space-x-8 text-xs uppercase tracking-widest absolute -top-16 -left-28"
+                >
+                  <span
+                    className={isDarkMode ? "text-gray-600" : "text-gray-500"}
+                  >
+                    React
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
+                  >
+                    •
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-600" : "text-gray-500"}
+                  >
+                    Node.js
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
+                  >
+                    •
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-600" : "text-gray-500"}
+                  >
+                    Typescript
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
+                  >
+                    •
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-600" : "text-gray-500"}
+                  >
+                    MongoDB
+                  </span>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  className={`w-80 h-96 rounded-3xl overflow-hidden border-4 ${
+                    isDarkMode ? "border-gray-800" : "border-gray-300"
+                  } shadow-2xl`}
+                >
+                  <img
+                    src={PROFILE_PIC}
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </motion.div>
+
+                {/* Decorative elements */}
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{
+                    duration: 20,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  className="absolute -inset-4 rounded-3xl border border-blue-500/20"
+                />
+                <motion.div
+                  animate={{ rotate: -360 }}
+                  transition={{
+                    duration: 30,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  className="absolute -inset-8 rounded-3xl border border-purple-500/10"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
