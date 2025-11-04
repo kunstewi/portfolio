@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, useScroll, AnimatePresence } from "framer-motion";
-import { Code2, Sun, Moon, Menu, X } from "lucide-react";
+import { Codesandbox, Sun, Moon, Menu, X } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 
 const Navbar = () => {
@@ -30,8 +30,8 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           className="flex items-center space-x-2"
         >
-          <Code2 size={24} className="text-blue-500" />{" "}
-          <span className="text-lg ml-1">Stewi Works</span>
+          <Codesandbox size={50} className="text-blue-500" />{" "}
+
         </motion.div>
 
         {/* Desktop Navigation */}

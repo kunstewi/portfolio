@@ -51,7 +51,7 @@ export const SKILLS_CATEGORY = [
     skills: [
       { name: "Node.js", level: 90, color: "bg-green-500" },
       { name: "Express.js", level: 88, color: "bg-gray-700" },
-      { name: "Python", level: 85, color: "bg-yellow-500" },
+      { name: "Nest.js", level: 80, color: "bg-[#E0234E]" },
       { name: "GraphQL", level: 80, color: "bg-pink-600" },
       { name: "REST APIs", level: 92, color: "bg-orange-500" },
     ],
@@ -62,9 +62,10 @@ export const SKILLS_CATEGORY = [
     description: "Managing and optimizing data storage",
     skills: [
       { name: "MongoDB", level: 88, color: "bg-green-600" },
+      { name: "PostgreSQL", level: 80, color: "bg-[#336791]" },
+      { name: "MySQL", level: 80, color: "bg-[#00758F]" },
       { name: "Redis", level: 80, color: "bg-red-500" },
       { name: "Prisma", level: 82, color: "bg-indigo-600" },
-      { name: "Firebase", level: 78, color: "bg-yellow-600" },
     ],
   },
   {
@@ -75,7 +76,7 @@ export const SKILLS_CATEGORY = [
       { name: "Docker", level: 82, color: "bg-blue-600" },
       { name: "AWS", level: 78, color: "bg-orange-600" },
       { name: "Vercel", level: 90, color: "bg-gray-900" },
-      { name: "Git", level: 95, color: "bg-orange-700" },
+      { name: "Nginx", level: 95, color: "bg-[#009639]" },
       { name: "CI/CD", level: 75, color: "bg-purple-600" },
     ],
   },
@@ -85,18 +86,22 @@ export const SKILLS_CATEGORY = [
 // --- TECH_STACK ---
 // ====================================================================
 export const TECH_STACK = [
-  "JavaScript",
-  "HTML5",
-  "CSS3",
-  "Sass",
-  "Webpack",
-  "Vite",
+  "Python",
+  "Golang",
+  "Langchain",
+  "VectorDB",
+  "LLM APIs",
+  "ChatoBot Integration",
+  "RAG Applications",
   "Jest",
-  "Cypress",
-  "Figma",
-  "Adobe XD",
-  "Notion",
-  "Slack",
+  "Playwright",
+  "Monorepo",
+  "Turborepo",
+  "Nx",
+  "Kubernetes",
+  "Prometheus",
+  "Grafana",
+
 ];
 
 // ====================================================================
