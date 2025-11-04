@@ -33,17 +33,23 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
       >
         {/* Project Image */}
         <div className="relative overflow-hidden">
-          <img src={project.image} alt={project.title} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" />
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+          />
 
           {/* Featured Badge */}
           {project.featured && (
             <div className="absolute top-4 left-4">
-              <span className="bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-medium">Featured</span>
+              <span className="bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-medium">
+                Featured
+              </span>
             </div>
           )}
 
           {/* Category Badge */}
-           <div className="absolute top-4 right-4">
+          <div className="absolute top-4 right-4">
             <span
               className={`text-xs px-3 py-1 rounded-full font-medium ${
                 isDarkMode
@@ -84,6 +90,35 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
               <span>GitHub</span>
             </motion.a>
           </motion.div>
+        </div>
+
+        {/* Project Content */}
+        <div className="p-6">
+          <h3 className="text-xl font-medium mb-3 group-hover:text-blue-500 transition-colors">{project.title}</h3>
+
+          <p
+            className={`text-sm leading-relaxed mb-4 ${
+              isDarkMode ? "text-gray-400" : "text-gray-600"
+            }`}
+          >
+            {project.description}
+          </p>
+
+          {/* Tech Stack Tags */}
+          <div className="flex flex-wrap gap-2">
+            {project.tags.map((tag, tagIndex) => (
+              <span
+                key={tagIndex}
+                className={`text-xs px-3 py-1 rounded-full ${
+                  isDarkMode
+                    ? "bg-gray-800 text-gray-300"
+                    : "bg-gray-100 text-gray-700"
+                }`}
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </motion.div>
