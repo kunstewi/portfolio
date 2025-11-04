@@ -50,7 +50,10 @@ const ProjectsSection = () => {
             Featured Work
           </motion.div>
 
-          <motion.h2 variants={itemVariants} className="text-3xl md:text-5xl font-light mb-6">
+          <motion.h2
+            variants={itemVariants}
+            className="text-3xl md:text-5xl font-light mb-6"
+          >
             Recent <span className="text-blue-500 font-medium">Projects</span>
           </motion.h2>
 
@@ -63,6 +66,23 @@ const ProjectsSection = () => {
             A collection of projects that showcase my expertise in building
             modern web applications and solving complex problems.
           </motion.p>
+        </motion.div>
+
+        {/* Projects Grid */}
+        <motion.div
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={containerVariants}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {PROJECTS.map((project, index) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              index={index}
+              isDarkMode={isDarkMode}
+            />
+          ))}
         </motion.div>
       </div>
     </section>
