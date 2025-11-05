@@ -132,7 +132,7 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-500" : "text-gray-600"
                 } mb-4`}
               >
-                Full Stack Developer + AI Engineer
+                Full Stack Developer + Applied AI Engineer
               </motion.div>
               <motion.h1
                 variants={itemVariants}
@@ -141,12 +141,15 @@ const HeroSection = () => {
                 <span
                   className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                 >
-                  Shipping
+                  Shipping Scalable
                 </span>
-                <span className="text-blue-500 font-medium ml-2"> Web Apps</span>
+                <span className="text-blue-500 font-medium ml-2">
+                  {" "}
+                  Web Applications
+                </span>
                 <br />
                 <span className={isDarkMode ? "text-white" : "text-gray-900"}>
-                  faster than light
+                  that works
                 </span>
               </motion.h1>
 
@@ -156,9 +159,10 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 } mb-8 max-w-xl mx-auto font-light leading-relaxed`}
               >
-                I ship scalable and maintainable web applications with proper
-                CI/CD and secure deployments on VPS or Cloud Platforms (AWS,
-                GCP)
+                I will be your{" "}
+                <span className="text-blue-500 font-medium">
+                  Founding Engineer
+                </span>
               </motion.p>
 
               {/* CTA Buttons – Mobile */}
@@ -271,7 +275,7 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-500" : "text-gray-600"
                 } mb-6`}
               >
-                Full Stack Developer + AI Engineer
+                Full Stack Developer + Applied AI Engineer
               </motion.div>
               <motion.h1
                 variants={itemVariants}
@@ -280,13 +284,15 @@ const HeroSection = () => {
                 <span
                   className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                 >
-                  Shipping
+                  Shipping Scalable
                 </span>
                 <br />
-                <span className="text-blue-500 font-medium">Web Apps</span>
+                <span className="text-blue-500 font-medium">
+                  Web Applications
+                </span>
                 <br />
                 <span className={isDarkMode ? "text-white" : "text-gray-900"}>
-                  faster than light
+                  that works
                 </span>
               </motion.h1>
 
@@ -296,8 +302,10 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 } mb-12 font-light leading-relaxed max-w-lg`}
               >
-                I ship scalable and maintainable web applications with proper
-                CI/CD and secure deployments on VPS or Cloud Platforms like AWS or GCP
+                I will be your{" "}
+                <span className="text-blue-500 font-medium">
+                  FOUNDING ENGINEER
+                </span>
               </motion.p>
 
               {/* CTA Buttons – Desktop */}

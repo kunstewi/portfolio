@@ -30,7 +30,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           className="flex items-center space-x-2"
         >
-          <Codesandbox size={50} className="text-blue-500" />{" "}
+          <Codesandbox size={30} className="text-blue-500" />{" "}
 
         </motion.div>
 
