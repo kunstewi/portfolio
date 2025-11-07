@@ -54,7 +54,7 @@ const ContactSection = () => {
       id="contact"
       ref={sectionRef}
       className={`py-24 px-6 ${
-        isDarkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+        isDarkMode ? "bg-gray-950 text-white" : "bg-gray-50 text-gray-900"
       } relative overflow-hidden`}
     >
       {/* Background Elements */}
@@ -108,7 +108,7 @@ const ContactSection = () => {
               className={`p-8 rounded-2xl border ${
                 isDarkMode
                   ? "bg-gray-800/50 border-gray-700 backdrop-blur-sm"
-                  : "bg-gray-50/80 border-gray-200 backdrop-blur-sm"
+                  : "bg-gray-100/80 border-gray-200 backdrop-blur-sm"
               }`}
             >
               <h3 className="text-2xl font-medium mb-8">Send me a message</h3>

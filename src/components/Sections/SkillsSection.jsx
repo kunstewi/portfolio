@@ -40,7 +40,7 @@ const SkillsSection = () => {
       } relative overflow-hidden`}
     >
       {/* Background Elements */}
-      <motion.div style={{ y }} className="absolte inset-0 overflow-hidden">
+      <motion.div style={{ y }} className="absolute inset-0 overflow-hidden">
         <div
           className={`absolute top-40 right-1/4 w-72 h-72 rounded-full blur-3xl opacity-30
       ${isDarkMode ? "bg-blue-500" : "bg-blue-400"}
