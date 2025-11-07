@@ -126,7 +126,7 @@ const Footer = () => {
                 >
                   <Code2 size={28} />
                 </motion.div>
-                <span>Alex Johnson</span>
+                <span>Kanai Kumar</span>
               </motion.div>
 
               <motion.p
@@ -205,7 +205,7 @@ const Footer = () => {
                   isDarkMode ? "text-gray-500" : "text-gray-600"
                 }`}
               >
-                © {new Date().getFullYear()} Time To Program. All rights
+                © {new Date().getFullYear()} Kanai Kumar. All rights
                 reserved.
               </p>
               <p

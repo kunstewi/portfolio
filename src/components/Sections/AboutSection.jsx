@@ -102,7 +102,7 @@ const AboutSection = () => {
           >
             <motion.div
               variants={itemVariants}
-              className={`p-8 rounded-xl border transition-all duration-300 backdrop-blur-sm ${
+              className={`p-8 rounded-xl border backdrop-blur-sm ${
                 isDarkMode
                   ? "bg-gray-800/50 border-gray-700 hover:border-gray-600 hover:bg-gray-800/70"
                   : "bg-white/80 border-gray-200 hover:border-gray-300 hover:bg-white"
@@ -142,7 +142,7 @@ const AboutSection = () => {
                     key={passion.title}
                     variants={itemVariants}
                     whileHover={{ x: 4 }}
-                    className={`flex items-center space-x-4 p-6 rounded-xl border transition-all duration-300 backdrop-blur-sm ${
+                    className={`flex items-center space-x-4 p-6 rounded-xl border backdrop-blur-sm ${
                       isDarkMode
                         ? "bg-gray-800/50 border-gray-700 hover:border-gray-600 hover:bg-gray-800/70"
                         : "bg-white/80 border-gray-200 hover:border-gray-300 hover:bg-white"
