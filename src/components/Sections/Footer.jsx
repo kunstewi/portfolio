@@ -83,9 +83,9 @@ const Footer = () => {
   return (
     <footer
       ref={footerRef}
-      className={`relative ${
-        isDarkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
-      }`}
+      className={`py-24 px-6 ${
+        isDarkMode ? "bg-gray-950 text-white" : "bg-gray-50 text-gray-900"
+      } relative overflow-hidden`}
     >
       {/* Animated Wave/Gradient Line */}
       <AnimatedGradientLine />
