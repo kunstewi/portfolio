@@ -93,7 +93,7 @@ const Footer = () => {
       {/* Background Elements */}
       <motion.div
         style={{ y: scrollY }}
-        className="absolute inset-0 overflow-hidden pointer-events-none"
+        className="absolute inset-0 pointer-events-none"
       >
         <div className="absolute bottom-10 left-1/4 w-64 h-64 rounded-full blur-3xl opacity-20 bg-blue-500" />
         <div className="absolute top-10 right-1/3 w-48 h-48 rounded-full blur-3xl opacity-20 bg-purple-500" />
