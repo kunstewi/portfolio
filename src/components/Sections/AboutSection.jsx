@@ -102,10 +102,10 @@ const AboutSection = () => {
           >
             <motion.div
               variants={itemVariants}
-              className={`p-8 rounded-2xl border ${
+              className={`p-8 rounded-xl border transition-all duration-300 backdrop-blur-sm ${
                 isDarkMode
-                  ? "bg-gray-900/50 border-gray-800 backdrop-blur-sm"
-                  : "bg-white/80 border-gray-200 backdrop-blur-sm"
+                  ? "bg-gray-800/50 border-gray-700 hover:border-gray-600 hover:bg-gray-800/70"
+                  : "bg-white/80 border-gray-200 hover:border-gray-300 hover:bg-white"
               }`}
             >
               <h3 className="text-2xl font-medium mb-6">My Mission</h3>
@@ -142,11 +142,11 @@ const AboutSection = () => {
                     key={passion.title}
                     variants={itemVariants}
                     whileHover={{ x: 4 }}
-                    className={`flex items-center space-x-4 p-4 rounded-xl border ${
+                    className={`flex items-center space-x-4 p-6 rounded-xl border transition-all duration-300 backdrop-blur-sm ${
                       isDarkMode
-                        ? "bg-gray-900/30 border-gray-800 hover:bg-gray-900/50"
-                        : "bg-white/50 border-gray-200 hover:bg-white/80"
-                    } transition-all duration-300`}
+                        ? "bg-gray-800/50 border-gray-700 hover:border-gray-600 hover:bg-gray-800/70"
+                        : "bg-white/80 border-gray-200 hover:border-gray-300 hover:bg-white"
+                    }`}
                   >
                     <div
                       className={`p-3 rounded-lg ${
@@ -273,7 +273,10 @@ const AboutSection = () => {
           variants={containerVariants}
           className="text-center mt-20"
         >
-          <motion.div variants={itemVariants} className="flex flex-col items-center space-y-6">
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-col items-center space-y-6"
+          >
             <p
               className={`text-lg ${
                 isDarkMode ? "text-gray-400" : "text-gray-600"
