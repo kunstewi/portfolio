@@ -101,7 +101,6 @@ export const TECH_STACK = [
   "Kubernetes",
   "Prometheus",
   "Grafana",
-
 ];
 
 // ====================================================================
@@ -296,7 +295,7 @@ export const SOCIAL_LINKS = [
     name: "GitHub",
     icon: FiGithub,
     url: "https://github.com",
-    color: "hover:text-gray-400",
+    color: "hover:text-green-400",
     bgColor: "hover:bg-gray-500/10",
   },
   {
@@ -316,7 +315,7 @@ export const SOCIAL_LINKS = [
   {
     name: "Email",
     icon: Mail,
-    url: "mailto:alex@example.com", // Placeholder email
+    url: "mailto:kunstewi@gmail.com",
     color: "hover:text-green-400",
     bgColor: "hover:bg-green-500/10",
   },

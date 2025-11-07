@@ -105,10 +105,10 @@ const ContactSection = () => {
           >
             <motion.div
               variants={itemVariants}
-              className={`p-8 rounded-2xl border ${
+              className={`p-8 rounded-xl border backdrop-blur-sm ${
                 isDarkMode
-                  ? "bg-gray-800/50 border-gray-700 backdrop-blur-sm"
-                  : "bg-gray-100/80 border-gray-200 backdrop-blur-sm"
+                  ? "bg-gray-800/50 border-gray-700 hover:border-gray-600 hover:bg-gray-800/70"
+                  : "bg-white/80 border-gray-200 hover:border-gray-300 hover:bg-white"
               }`}
             >
               <h3 className="text-2xl font-medium mb-8">Send me a message</h3>
@@ -191,11 +191,11 @@ const ContactSection = () => {
                     key={info.label}
                     variants={itemVariants}
                     whileHover={{ x: 4 }}
-                    className={`flex items-center space-x-4 p-4 rounded-xl ${
+                    className={`flex items-center space-x-4 p-6 rounded-xl border backdrop-blur-sm ${
                       isDarkMode
-                        ? "bg-gray-800/30 hover:bg-gray-800/50"
-                        : "bg-gray-50/50 hover:bg-gray-100/50"
-                    } transition-all duration-300`}
+                        ? "bg-gray-800/50 border-gray-700 hover:border-gray-600 hover:bg-gray-800/70"
+                        : "bg-white/80 border-gray-200 hover:border-gray-300 hover:bg-white"
+                    }`}
                   >
                     <div
                       className={`p-3 rounded-lg ${
