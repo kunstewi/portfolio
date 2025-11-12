@@ -39,7 +39,7 @@ export const SKILLS_CATEGORY = [
     skills: [
       { name: "React", level: 95, color: "bg-blue-500" },
       { name: "TypeScript", level: 90, color: "bg-blue-600" },
-      { name: "Next.js", level: 88, color: "bg-gray-800" },
+      { name: "Next.js", level: 88, color: "bg-gray-500" },
       { name: "Tailwind CSS", level: 92, color: "bg-cyan-500" },
       { name: "Framer Motion", level: 85, color: "bg-pink-500" },
     ],
@@ -50,7 +50,7 @@ export const SKILLS_CATEGORY = [
     description: "Building robust server-side solutions",
     skills: [
       { name: "Node.js", level: 90, color: "bg-green-500" },
-      { name: "Express.js", level: 88, color: "bg-gray-700" },
+      { name: "Express.js", level: 88, color: "bg-gray-600" },
       { name: "Nest.js", level: 80, color: "bg-[#E0234E]" },
       { name: "GraphQL", level: 80, color: "bg-pink-600" },
       { name: "REST APIs", level: 92, color: "bg-orange-500" },
@@ -75,7 +75,7 @@ export const SKILLS_CATEGORY = [
     skills: [
       { name: "Docker", level: 82, color: "bg-blue-600" },
       { name: "AWS", level: 78, color: "bg-orange-600" },
-      { name: "Vercel", level: 90, color: "bg-gray-900" },
+      { name: "Vercel", level: 90, color: "bg-gray-500" },
       { name: "Nginx", level: 95, color: "bg-[#009639]" },
       { name: "CI/CD", level: 75, color: "bg-purple-600" },
     ],
@@ -91,7 +91,7 @@ export const TECH_STACK = [
   "Langchain",
   "VectorDB",
   "LLM APIs",
-  "ChatoBot Integration",
+  "ChatBot Integration",
   "RAG Applications",
   "Jest",
   "Playwright",
@@ -189,21 +189,22 @@ export const PROJECTS = [
     featured: true,
     category: "Web App",
   },
-  /*
+
   // The Polling App is commented out in the source image
-  {
-    id: 7,
-    title: "Polling App",
-    description:
-      "Polling app with features like user authentication, creating polls, voting, bookmarking, closing poll.",
-    image: PROJECT_IMG_7,
-    tags: ["React", "Framer Motion", "Tailwind", "Vercel"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-    category: "Frontend",
-  },
-  */
+  
+  // {
+  //   id: 7,
+  //   title: "Polling App",
+  //   description:
+  //     "Polling app with features like user authentication, creating polls, voting, bookmarking, closing poll.",
+  //   image: PROJECT_IMG_7,
+  //   tags: ["React", "Framer Motion", "Tailwind", "Vercel"],
+  //   liveUrl: "#",
+  //   githubUrl: "#",
+  //   featured: false,
+  //   category: "Frontend",
+  // },
+  
 ];
 
 // ====================================================================
@@ -211,6 +212,7 @@ export const PROJECTS = [
 // ====================================================================
 export const JOURNEY_STEPS = [
   {
+    id: 1,
     year: "2021",
     title: "Started Coding Journey",
     company: "Self-taught",
@@ -220,6 +222,7 @@ export const JOURNEY_STEPS = [
     color: "bg-blue-500",
   },
   {
+    id: 2,
     year: "2022",
     title: "First Internship",
     company: "TechStart Inc.",
@@ -229,6 +232,7 @@ export const JOURNEY_STEPS = [
     color: "bg-green-500",
   },
   {
+    id: 3,
     year: "2022",
     title: "Computer Science Degree",
     company: "University of Technology",
@@ -238,6 +242,7 @@ export const JOURNEY_STEPS = [
     color: "bg-purple-500", // Manually completed the description and color
   },
   {
+    id: 4,
     year: "2023",
     title: "Full Stack Developer",
     company: "Digital Solutions Ltd.",
@@ -247,6 +252,7 @@ export const JOURNEY_STEPS = [
     color: "bg-orange-500",
   },
   {
+    id: 5,
     year: "2024",
     title: "Freelance & Open Source",
     company: "Independent",
@@ -256,6 +262,7 @@ export const JOURNEY_STEPS = [
     color: "bg-pink-500",
   },
   {
+    id: 6,
     year: "2025",
     title: "Senior Developer",
     company: "Present",
